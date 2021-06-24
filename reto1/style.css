@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background:url(https://images.unsplash.com/photo-1624280433509-b01afeaf68e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2075&q=80);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header {
+  height: 80px;
+  color: white;
+  text-align: center;
+}
+#reto {
+  
+  background-color:rgba(63, 62, 62, 0.3);
+  backdrop-filter: blur(20px);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 20px;
+  width: 80%;
+}
+.reto__formulario {
+
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.reto__formulario input {
+  margin: 10px 0px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  width: 400px;
+  background-color:rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  color: aliceblue;
+}
+
+input:focus {
+  outline-width: 0; 
+  border: 0.2px solid white;
+  
+}
+.reto__formulario button {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 16px;
+  border: none;
+  background-color:rgb(48, 179, 128) ;
+  color: white;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+.reto__formulario button:hover{
+  background-color:rgb(35, 128, 92) ;
+}
+.subtitle{
+  font-size: 30px;
+}
+.reto__resultado {
+ text-align: center;
+}
+.reto__resultado ul{
+  padding: 5px 8px;
+  background-color:rgba(75, 74, 74, 0.5);
+  backdrop-filter: blur(3px);
+  display:inline-block;
+  margin: 4px;
+  border-radius: 10px;
+  position: relative;
+}
+.reto__resultado-item{
+padding: 2px;
+text-align: center;
+
+}
+
+.footer {
+  text-align: center;
+  background-color: rgb(48, 179, 128);
+  width: 80%;
+  padding: 3px 90px 5px 90px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-shadow: 0px 12px 10px -10px rgb(197, 193, 193);
+}
+.time{
+  margin-top: 10px;
+}
+@media (max-width:600px){
+  .reto__formulario input {
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    width: 300px;
+  }
+}

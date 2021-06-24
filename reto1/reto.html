@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+    <div id="reto">
+      <header class="header">
+        <h1>
+          Mis Cursos de Platzi💚
+        </h1>
+      </header>
+        <div class="reto__formulario" >
+
+          <p c>
+            <input type="text" placeholder="Titulo del curso" v-model="title"/>
+          </p>
+          <p>
+            <input type="number" placeholder="Horas" v-model="time"/>
+          </p>
+          <p>
+            <button v-on:click="addCourse" > Guardar Curso</button>
+          </p>
+        </div>
+        <div class="reto__resultado">
+          <h3 class="subtitle">Lista de Cursos</h3>
+          <p class="red">{{ courses.length  ?  'Cursos realizados' : 'Aun no has realizado cursos'}}</p>
+          <div>
+            <ul>
+            <ol
+            v-for="(c,i) in courses" v-bind:key="c.title" class="reto__resultado-item">
+           Curso de {{c.title}} con {{c.time}} de estudio hasta el momento.
+            </ol>
+          </ul>
+            <hr/>
+            <p class="time">
+              Llevo <strong>{{ totalTime }}</strong> horas aprendiendo en Platzi.
+            
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="footer"> 
+        <p>  #NuncaParesDeAprender 💚</p>
+        <p> Elaborado por <strong>Dev</strong>AndreiP</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="../js/reto.js"></script>
+  </section>
+</body>
+</html>

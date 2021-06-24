@@ -1,0 +1,27 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    height: 64px;
+    width: 64px;
+  }
+h1{
+    font-weight: 800;
+    font-size: 14px;
+}
+span{
+    cursor: pointer;
+}
+.green{
+    color: seagreen;
+}
+.red{
+    color: tomato;
+}
+.orange{
+    color: orange;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
