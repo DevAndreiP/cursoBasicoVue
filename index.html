@@ -15,24 +15,9 @@
       v-on:mouseover="toggleShowPrices" 
       v-on:mouseout="toggleShowPrices" 
       v-bind:src="img" v-bind:alt="name" />
-      <h1 v-bind:class="changePercent > 0 ? 'green' : 'red' ">
-        {{ title }}
-        <span v-if="changePercent > 0">👌✌</span>
-        <span v-if="changePercent < 0">😒</span>
-        <span v-if="changePercent == 0">🤞</span>
 
-        <!-- <span v-show="changePercent > 0">👌✌</span>
-            <span v-show="changePercent < 0">😒</span>
-            <span v-show="changePercent == 0">🤞</span> -->
-            <br>
-          </h1>
-        <span v-on:click="toggleShowPrices">
-          {{ showPrices ? 'Esconder Precios': 'Mostrar Precios'}}
-        </span>
-        <br>
-        <span v-on:click="toogleShowNames">
-          {{ showNames ? 'Esconder Nombres': 'Mostrar Nombres'}}
-        </span>
+      
+      <coin-detail></coin-detail>
         <br>
         <input type="number" v-model="value">
         <span>{{ convertedValue }}</span>
