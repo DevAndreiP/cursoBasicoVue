@@ -120,7 +120,7 @@ new Vue({
       console.log("Mountede ejecutado")
     },
   methods: {
-    updateColor(color){
+    updateColor(){
       this.color_fondo = color || this.color_fondo
       .split("")
       .reverse()

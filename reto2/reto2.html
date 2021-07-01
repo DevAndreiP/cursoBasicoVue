@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO NUMERO 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <button 
+        v-on:click="toggleModal"
+        >
+        Show Modal
+    </button>
+        
+        <modal v-show="showModal" 
+        v-on:close="toggleModal">
+            <template v-slot:imagen><img src="./img/IMG_5813.JPG" alt=""></template>
+            <template v-slot:body>
+                Andrei Leonardo Pérez Valencia, estudiante octavo semestre del programa de Ingeniería en Tecnologías de la Información y las Comunicaciones, Facultad de Ingeniería de la Universidad Libre Seccional Cúcuta, ha participado como ponente en la Red Colombiana de Semilleros de Investigación en los años 2017 y 2018 como también ponente encuentro nacional de ingenierías de la Universidad Libre en la seccional de la ciudad de Pereira con el proyecto GESTIÓN Y AUTOMATIZACIÓN DE PROCESOS ACADÉMICOS PARA EL SEGUIMIENTO ESTUDIANTIL, también ha participado en diferentes encuentros de ingeniería tanto local como a nivel nacional, su reciente participación fue el CONGRESO EMPRESARIAL COLOMBIANO, liderado y organizado por Asociación Nacional de Industriales(ANDI); Ha realizado proyectos en compañía de alumnos referentes a SISTEMA DE SEGURIDAD CON RFID y TRANSMISOR CON MODULACIÓN DE AMPLITUD, actualmente emprendedor digital avalado por el ministerio de las TIC en el programa
+            </template>
+        </modal>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="../js/reto2.js"></script>
+</body>
+</html>
