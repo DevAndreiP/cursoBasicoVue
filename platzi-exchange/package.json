@@ -9,9 +9,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "numeral": "^2.0.6",
+    "tailwindcss": "^1.1.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.2"
   },
   "devDependencies": {
+    "@ianaya89/vue-cli-plugin-tailwind": "~1.1.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
